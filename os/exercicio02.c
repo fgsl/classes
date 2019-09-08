@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 {
     char simbolos[7];
     simbolos[0] = 'I'; 
-    simbolos[1] = 'V';;
+    simbolos[1] = 'V';
     simbolos[2] = 'X';
     simbolos[3] = 'L'; 
     simbolos[4] = 'C'; 
