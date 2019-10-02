@@ -4,6 +4,9 @@ int main(int argc, char *argv[])
 {
     char simbolos[7];
     int valores[7];
+
+    printf("O valor de argc é %d\n",argc);
+
     simbolos[0] = 'I'; valores[0] = 1;
     simbolos[1] = 'V'; valores[1] = 5;
     simbolos[2] = 'X'; valores[2] = 10;
