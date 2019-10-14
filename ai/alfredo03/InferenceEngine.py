@@ -1,3 +1,4 @@
+# coding:utf-8
 from KnowledgeBase import KnowledgeBase
 from NaturalLanguageProcessor import NaturalLanguageProcessor
 
@@ -10,4 +11,6 @@ class InferenceEngine:
     def answer(self, question):
         normalizedQuestion = self.nlp.normalize(question)
         facts = self.knowledgeBase.getFacts(normalizedQuestion)
-        return facts 
+        if (facts == []):
+            facts.append('Não encontrei resposta para essa questão')
+        return ''.join(facts)
