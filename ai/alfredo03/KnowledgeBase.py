@@ -11,7 +11,7 @@ class KnowledgeBase:
         self.facts = self.getKnownFacts(question)
         if (self.facts == []): 
             self.knowledgeAcquirer.getFacts(question)
-        return facts
+        return self.facts
 
     def getKnownFacts(self,question):
         f = open("facts.json", "r")

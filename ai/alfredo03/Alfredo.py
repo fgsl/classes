@@ -10,7 +10,8 @@ class Alfredo:
         questao = self.ui.ask("Olá, eu sou Alfredo. Em que posso ajudar?")
         self.ui.say("Você disse: " + questao)
         ie = InferenceEngine()
-        self.ui.say(ie.answer(questao))
+        fatos = ie.answer(questao);
+        self.ui.say("".join(fatos))
         while (True):
             questao = self.ui.ask("Posso ajudar em mais alguma coisa?")
             if ("não" in questao.lower()):
