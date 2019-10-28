@@ -5,6 +5,6 @@ class InferenceEngine:
     def __init__(self):
         self.knowledgeBase = KnowledgeBase()
 
-    def answer(question):
+    def answer(self, question):
         facts = self.knowledgeBase.getFacts(question)
         return question 

@@ -10,7 +10,7 @@ class KnowledgeBase:
     def getFacts(self, question):
         self.facts = self.getKnownFacts(question)
         if (self.facts == []): 
-            self.knowledgeAcquirer.getFacts(question)
+            self.facts = self.knowledgeAcquirer.getFacts(question)
         return self.facts
 
     def getKnownFacts(self,question):
