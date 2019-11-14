@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define COMPRIMENTO 21
+#define COMPRIMENTO 20
 
 int main(int args, char *arg[])
 {
 	FILE *arquivo;	
         char nome[COMPRIMENTO];
-	char enter = '\n';	
+	//char enter = '\n';	
 
 	printf("Digite o nome do aluno:");
 	fgets(nome, COMPRIMENTO, stdin);
@@ -20,7 +20,8 @@ int main(int args, char *arg[])
 		system("pause");
 		return 0; 
 	}
-	fprintf(arquivo,"%s %c",nome,enter);
+	//fprintf(arquivo,"%s %c",nome,enter); // se quiser saltar uma linha a cada registro, habilite a variável enter
+	fprintf(arquivo,"%s",nome);
 	fclose(arquivo);
 	printf("\nAluno incluído.\n");
 }

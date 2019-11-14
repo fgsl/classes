@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define COMPRIMENTO 20
+#define COMPRIMENTO 21
 
 int limparNome(char nome[])
 {
@@ -27,7 +27,7 @@ int main(int args, char *arg[])
 	}
 	while (!feof(arquivo))
 	{
-		fgets(nome, 20, arquivo);
+		fgets(nome, COMPRIMENTO, arquivo);
                 for(int i=0; i<COMPRIMENTO;i++)
 		{
 			printf("%c",nome[i]);
